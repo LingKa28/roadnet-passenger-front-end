@@ -1,17 +1,66 @@
 {
-	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
+	"pages": [
+		{
+			"path": "pages/home-page/home-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, 
+		{
+			"path": "pages/user-lever-page/user-lever-page",
+			"style": {
+				"navigationBarTitleText": "用户等级"
+			}
+		},
+		{
+			"path": "pages/card-voucher-page/card-voucher-page",
+			"style": {
+				"navigationBarTitleText": "我的卡券"
+			}
+		},
+		{
+			"path": "pages/personal-center-page/personal-center-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}
-	}],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "Road Net",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"app-plus": {
-			"background": "#efeff4"
-		}
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#8c8c8c",
+		"selectedColor": "#b37feb",
+		"backgroundColor": "white",
+		"borderStyle": "white",
+		"list": [
+			{
+				"pagePath": "pages/home-page/home-page",
+				"text": "首页",
+				"iconPath": "static/tabbaricons/tabbaricon.png",
+				"selectedIconPath": "static/tabbaricons/tabbarselecticon.png"
+			},
+			{
+				"pagePath": "pages/user-lever-page/user-lever-page",
+				"text": "等级",
+				"iconPath": "static/tabbaricons/tabbaricon.png",
+				"selectedIconPath": "static/tabbaricons/tabbarselecticon.png"
+			},
+			{
+				"pagePath": "pages/card-voucher-page/card-voucher-page",
+				"text": "卡券",
+				"iconPath": "static/tabbaricons/tabbaricon.png",
+				"selectedIconPath": "static/tabbaricons/tabbarselecticon.png"
+			},
+			{
+				"pagePath": "pages/personal-center-page/personal-center-page",
+				"text": "我的",
+				"iconPath": "static/tabbaricons/tabbaricon.png",
+				"selectedIconPath": "static/tabbaricons/tabbarselecticon.png"
+			}
+		]
 	}
 }
